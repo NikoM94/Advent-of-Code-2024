@@ -1,0 +1,1087 @@
+Analysis of Non-Monotonic Safe Reports from Day02.js
+================================================
+Total safe reports analyzed: 1030
+Non-monotonic reports found: 130
+
+Detailed Analysis of Non-Monotonic Safe Reports:
+-----------------
+
+Safe Report #1: 6 8 11 12 14 16 18 16
+Changes:
+  - Increases at index 1 (6 -> 8)
+  - Increases at index 2 (8 -> 11)
+  - Increases at index 3 (11 -> 12)
+  - Increases at index 4 (12 -> 14)
+  - Increases at index 5 (14 -> 16)
+  - Increases at index 6 (16 -> 18)
+  - Decreases at index 7 (18 -> 16)
+
+Safe Report #3: 59 61 64 62 65
+Changes:
+  - Increases at index 1 (59 -> 61)
+  - Increases at index 2 (61 -> 64)
+  - Decreases at index 3 (64 -> 62)
+  - Increases at index 4 (62 -> 65)
+
+Safe Report #4: 33 36 37 39 36 35
+Changes:
+  - Increases at index 1 (33 -> 36)
+  - Increases at index 2 (36 -> 37)
+  - Increases at index 3 (37 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 35)
+
+Safe Report #5: 60 62 64 61 62 64 64
+Changes:
+  - Increases at index 1 (60 -> 62)
+  - Increases at index 2 (62 -> 64)
+  - Decreases at index 3 (64 -> 61)
+  - Increases at index 4 (61 -> 62)
+  - Increases at index 5 (62 -> 64)
+
+Safe Report #6: 72 73 75 77 79 82 79 85
+Changes:
+  - Increases at index 1 (72 -> 73)
+  - Increases at index 2 (73 -> 75)
+  - Increases at index 3 (75 -> 77)
+  - Increases at index 4 (77 -> 79)
+  - Increases at index 5 (79 -> 82)
+  - Decreases at index 6 (82 -> 79)
+  - Increases at index 7 (79 -> 85)
+
+Safe Report #8: 44 45 45 46 48 50 52 51
+Changes:
+  - Increases at index 1 (44 -> 45)
+  - Increases at index 3 (45 -> 46)
+  - Increases at index 4 (46 -> 48)
+  - Increases at index 5 (48 -> 50)
+  - Increases at index 6 (50 -> 52)
+  - Decreases at index 7 (52 -> 51)
+
+Safe Report #9: 12 10 11 14 17 18 20 21
+Changes:
+  - Decreases at index 1 (12 -> 10)
+  - Increases at index 2 (10 -> 11)
+  - Increases at index 3 (11 -> 14)
+  - Increases at index 4 (14 -> 17)
+  - Increases at index 5 (17 -> 18)
+  - Increases at index 6 (18 -> 20)
+  - Increases at index 7 (20 -> 21)
+
+Safe Report #10: 68 67 70 73 71
+Changes:
+  - Decreases at index 1 (68 -> 67)
+  - Increases at index 2 (67 -> 70)
+  - Increases at index 3 (70 -> 73)
+  - Decreases at index 4 (73 -> 71)
+
+Safe Report #11: 80 79 80 81 84 86 88 88
+Changes:
+  - Decreases at index 1 (80 -> 79)
+  - Increases at index 2 (79 -> 80)
+  - Increases at index 3 (80 -> 81)
+  - Increases at index 4 (81 -> 84)
+  - Increases at index 5 (84 -> 86)
+  - Increases at index 6 (86 -> 88)
+
+Safe Report #12: 24 21 24 26 25 26
+Changes:
+  - Decreases at index 1 (24 -> 21)
+  - Increases at index 2 (21 -> 24)
+  - Increases at index 3 (24 -> 26)
+  - Decreases at index 4 (26 -> 25)
+  - Increases at index 5 (25 -> 26)
+
+Safe Report #13: 30 29 32 35 37 34 33
+Changes:
+  - Decreases at index 1 (30 -> 29)
+  - Increases at index 2 (29 -> 32)
+  - Increases at index 3 (32 -> 35)
+  - Increases at index 4 (35 -> 37)
+  - Decreases at index 5 (37 -> 34)
+  - Decreases at index 6 (34 -> 33)
+
+Safe Report #14: 45 42 41 44 44
+Changes:
+  - Decreases at index 1 (45 -> 42)
+  - Decreases at index 2 (42 -> 41)
+  - Increases at index 3 (41 -> 44)
+
+Safe Report #15: 44 42 43 44 45 45 48 51
+Changes:
+  - Decreases at index 1 (44 -> 42)
+  - Increases at index 2 (42 -> 43)
+  - Increases at index 3 (43 -> 44)
+  - Increases at index 4 (44 -> 45)
+  - Increases at index 6 (45 -> 48)
+  - Increases at index 7 (48 -> 51)
+
+Safe Report #16: 53 52 52 55 53
+Changes:
+  - Decreases at index 1 (53 -> 52)
+  - Increases at index 3 (52 -> 55)
+  - Decreases at index 4 (55 -> 53)
+
+Safe Report #17: 77 75 79 81 78
+Changes:
+  - Decreases at index 1 (77 -> 75)
+  - Increases at index 2 (75 -> 79)
+  - Increases at index 3 (79 -> 81)
+  - Decreases at index 4 (81 -> 78)
+
+Safe Report #18: 81 78 76 74 73 71 73
+Changes:
+  - Decreases at index 1 (81 -> 78)
+  - Decreases at index 2 (78 -> 76)
+  - Decreases at index 3 (76 -> 74)
+  - Decreases at index 4 (74 -> 73)
+  - Decreases at index 5 (73 -> 71)
+  - Increases at index 6 (71 -> 73)
+
+Safe Report #20: 99 96 98 97 96 94
+Changes:
+  - Decreases at index 1 (99 -> 96)
+  - Increases at index 2 (96 -> 98)
+  - Decreases at index 3 (98 -> 97)
+  - Decreases at index 4 (97 -> 96)
+  - Decreases at index 5 (96 -> 94)
+
+Safe Report #21: 39 37 35 33 32 31 34 36
+Changes:
+  - Decreases at index 1 (39 -> 37)
+  - Decreases at index 2 (37 -> 35)
+  - Decreases at index 3 (35 -> 33)
+  - Decreases at index 4 (33 -> 32)
+  - Decreases at index 5 (32 -> 31)
+  - Increases at index 6 (31 -> 34)
+  - Increases at index 7 (34 -> 36)
+
+Safe Report #22: 27 25 22 24 24
+Changes:
+  - Decreases at index 1 (27 -> 25)
+  - Decreases at index 2 (25 -> 22)
+  - Increases at index 3 (22 -> 24)
+
+Safe Report #23: 95 93 90 93 87
+Changes:
+  - Decreases at index 1 (95 -> 93)
+  - Decreases at index 2 (93 -> 90)
+  - Increases at index 3 (90 -> 93)
+  - Decreases at index 4 (93 -> 87)
+
+Safe Report #25: 64 62 61 60 60 58 55 57
+Changes:
+  - Decreases at index 1 (64 -> 62)
+  - Decreases at index 2 (62 -> 61)
+  - Decreases at index 3 (61 -> 60)
+  - Decreases at index 5 (60 -> 58)
+  - Decreases at index 6 (58 -> 55)
+  - Increases at index 7 (55 -> 57)
+
+Safe Report #26: 24 25 24 22 21 18 15 13
+Changes:
+  - Increases at index 1 (24 -> 25)
+  - Decreases at index 2 (25 -> 24)
+  - Decreases at index 3 (24 -> 22)
+  - Decreases at index 4 (22 -> 21)
+  - Decreases at index 5 (21 -> 18)
+  - Decreases at index 6 (18 -> 15)
+  - Decreases at index 7 (15 -> 13)
+
+Safe Report #27: 43 45 42 39 36 33 34
+Changes:
+  - Increases at index 1 (43 -> 45)
+  - Decreases at index 2 (45 -> 42)
+  - Decreases at index 3 (42 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 33)
+  - Increases at index 6 (33 -> 34)
+
+Safe Report #28: 71 73 72 69 67 64 63 63
+Changes:
+  - Increases at index 1 (71 -> 73)
+  - Decreases at index 2 (73 -> 72)
+  - Decreases at index 3 (72 -> 69)
+  - Decreases at index 4 (69 -> 67)
+  - Decreases at index 5 (67 -> 64)
+  - Decreases at index 6 (64 -> 63)
+
+Safe Report #29: 38 39 38 36 37 36 34 33
+Changes:
+  - Increases at index 1 (38 -> 39)
+  - Decreases at index 2 (39 -> 38)
+  - Decreases at index 3 (38 -> 36)
+  - Increases at index 4 (36 -> 37)
+  - Decreases at index 5 (37 -> 36)
+  - Decreases at index 6 (36 -> 34)
+  - Decreases at index 7 (34 -> 33)
+
+Safe Report #30: 53 54 56 55 58
+Changes:
+  - Increases at index 1 (53 -> 54)
+  - Increases at index 2 (54 -> 56)
+  - Decreases at index 3 (56 -> 55)
+  - Increases at index 4 (55 -> 58)
+
+Safe Report #31: 76 78 75 78 76 73 73
+Changes:
+  - Increases at index 1 (76 -> 78)
+  - Decreases at index 2 (78 -> 75)
+  - Increases at index 3 (75 -> 78)
+  - Decreases at index 4 (78 -> 76)
+  - Decreases at index 5 (76 -> 73)
+
+Safe Report #32: 97 98 96 95 93 90 90 87
+Changes:
+  - Increases at index 1 (97 -> 98)
+  - Decreases at index 2 (98 -> 96)
+  - Decreases at index 3 (96 -> 95)
+  - Decreases at index 4 (95 -> 93)
+  - Decreases at index 5 (93 -> 90)
+  - Decreases at index 7 (90 -> 87)
+
+Safe Report #33: 42 44 41 40 39 39 37 40
+Changes:
+  - Increases at index 1 (42 -> 44)
+  - Decreases at index 2 (44 -> 41)
+  - Decreases at index 3 (41 -> 40)
+  - Decreases at index 4 (40 -> 39)
+  - Decreases at index 6 (39 -> 37)
+  - Increases at index 7 (37 -> 40)
+
+Safe Report #34: 3 6 8 10 13 16 19 16
+Changes:
+  - Increases at index 1 (3 -> 6)
+  - Increases at index 2 (6 -> 8)
+  - Increases at index 3 (8 -> 10)
+  - Increases at index 4 (10 -> 13)
+  - Increases at index 5 (13 -> 16)
+  - Increases at index 6 (16 -> 19)
+  - Decreases at index 7 (19 -> 16)
+
+Safe Report #36: 28 29 30 29 30 33
+Changes:
+  - Increases at index 1 (28 -> 29)
+  - Increases at index 2 (29 -> 30)
+  - Decreases at index 3 (30 -> 29)
+  - Increases at index 4 (29 -> 30)
+  - Increases at index 5 (30 -> 33)
+
+Safe Report #37: 43 44 47 50 49 47
+Changes:
+  - Increases at index 1 (43 -> 44)
+  - Increases at index 2 (44 -> 47)
+  - Increases at index 3 (47 -> 50)
+  - Decreases at index 4 (50 -> 49)
+  - Decreases at index 5 (49 -> 47)
+
+Safe Report #38: 77 80 82 83 86 83 85 85
+Changes:
+  - Increases at index 1 (77 -> 80)
+  - Increases at index 2 (80 -> 82)
+  - Increases at index 3 (82 -> 83)
+  - Increases at index 4 (83 -> 86)
+  - Decreases at index 5 (86 -> 83)
+  - Increases at index 6 (83 -> 85)
+
+Safe Report #39: 32 33 35 33 38
+Changes:
+  - Increases at index 1 (32 -> 33)
+  - Increases at index 2 (33 -> 35)
+  - Decreases at index 3 (35 -> 33)
+  - Increases at index 4 (33 -> 38)
+
+Safe Report #41: 77 80 80 83 82
+Changes:
+  - Increases at index 1 (77 -> 80)
+  - Increases at index 3 (80 -> 83)
+  - Decreases at index 4 (83 -> 82)
+
+Safe Report #42: 50 48 49 50 53 56
+Changes:
+  - Decreases at index 1 (50 -> 48)
+  - Increases at index 2 (48 -> 49)
+  - Increases at index 3 (49 -> 50)
+  - Increases at index 4 (50 -> 53)
+  - Increases at index 5 (53 -> 56)
+
+Safe Report #43: 97 94 97 98 95
+Changes:
+  - Decreases at index 1 (97 -> 94)
+  - Increases at index 2 (94 -> 97)
+  - Increases at index 3 (97 -> 98)
+  - Decreases at index 4 (98 -> 95)
+
+Safe Report #44: 5 2 3 6 9 9
+Changes:
+  - Decreases at index 1 (5 -> 2)
+  - Increases at index 2 (2 -> 3)
+  - Increases at index 3 (3 -> 6)
+  - Increases at index 4 (6 -> 9)
+
+Safe Report #45: 83 80 81 84 87 86 88
+Changes:
+  - Decreases at index 1 (83 -> 80)
+  - Increases at index 2 (80 -> 81)
+  - Increases at index 3 (81 -> 84)
+  - Increases at index 4 (84 -> 87)
+  - Decreases at index 5 (87 -> 86)
+  - Increases at index 6 (86 -> 88)
+
+Safe Report #46: 24 21 22 25 24 25 22
+Changes:
+  - Decreases at index 1 (24 -> 21)
+  - Increases at index 2 (21 -> 22)
+  - Increases at index 3 (22 -> 25)
+  - Decreases at index 4 (25 -> 24)
+  - Increases at index 5 (24 -> 25)
+  - Decreases at index 6 (25 -> 22)
+
+Safe Report #47: 99 97 96 97 97
+Changes:
+  - Decreases at index 1 (99 -> 97)
+  - Decreases at index 2 (97 -> 96)
+  - Increases at index 3 (96 -> 97)
+
+Safe Report #48: 9 8 11 12 15 17 17 19
+Changes:
+  - Decreases at index 1 (9 -> 8)
+  - Increases at index 2 (8 -> 11)
+  - Increases at index 3 (11 -> 12)
+  - Increases at index 4 (12 -> 15)
+  - Increases at index 5 (15 -> 17)
+  - Increases at index 7 (17 -> 19)
+
+Safe Report #49: 31 28 30 32 32 29
+Changes:
+  - Decreases at index 1 (31 -> 28)
+  - Increases at index 2 (28 -> 30)
+  - Increases at index 3 (30 -> 32)
+  - Decreases at index 5 (32 -> 29)
+
+Safe Report #50: 94 92 96 98 99 97
+Changes:
+  - Decreases at index 1 (94 -> 92)
+  - Increases at index 2 (92 -> 96)
+  - Increases at index 3 (96 -> 98)
+  - Increases at index 4 (98 -> 99)
+  - Decreases at index 5 (99 -> 97)
+
+Safe Report #51: 31 28 25 23 20 18 20
+Changes:
+  - Decreases at index 1 (31 -> 28)
+  - Decreases at index 2 (28 -> 25)
+  - Decreases at index 3 (25 -> 23)
+  - Decreases at index 4 (23 -> 20)
+  - Decreases at index 5 (20 -> 18)
+  - Increases at index 6 (18 -> 20)
+
+Safe Report #53: 98 96 94 97 94 93
+Changes:
+  - Decreases at index 1 (98 -> 96)
+  - Decreases at index 2 (96 -> 94)
+  - Increases at index 3 (94 -> 97)
+  - Decreases at index 4 (97 -> 94)
+  - Decreases at index 5 (94 -> 93)
+
+Safe Report #54: 82 80 79 82 80 79 82
+Changes:
+  - Decreases at index 1 (82 -> 80)
+  - Decreases at index 2 (80 -> 79)
+  - Increases at index 3 (79 -> 82)
+  - Decreases at index 4 (82 -> 80)
+  - Decreases at index 5 (80 -> 79)
+  - Increases at index 6 (79 -> 82)
+
+Safe Report #55: 80 78 81 80 80
+Changes:
+  - Decreases at index 1 (80 -> 78)
+  - Increases at index 2 (78 -> 81)
+  - Decreases at index 3 (81 -> 80)
+
+Safe Report #57: 72 71 68 67 66 66 68
+Changes:
+  - Decreases at index 1 (72 -> 71)
+  - Decreases at index 2 (71 -> 68)
+  - Decreases at index 3 (68 -> 67)
+  - Decreases at index 4 (67 -> 66)
+  - Increases at index 6 (66 -> 68)
+
+Safe Report #58: 56 58 57 55 54 52
+Changes:
+  - Increases at index 1 (56 -> 58)
+  - Decreases at index 2 (58 -> 57)
+  - Decreases at index 3 (57 -> 55)
+  - Decreases at index 4 (55 -> 54)
+  - Decreases at index 5 (54 -> 52)
+
+Safe Report #59: 5 8 7 6 5 7
+Changes:
+  - Increases at index 1 (5 -> 8)
+  - Decreases at index 2 (8 -> 7)
+  - Decreases at index 3 (7 -> 6)
+  - Decreases at index 4 (6 -> 5)
+  - Increases at index 5 (5 -> 7)
+
+Safe Report #60: 26 28 27 25 23 21 19 19
+Changes:
+  - Increases at index 1 (26 -> 28)
+  - Decreases at index 2 (28 -> 27)
+  - Decreases at index 3 (27 -> 25)
+  - Decreases at index 4 (25 -> 23)
+  - Decreases at index 5 (23 -> 21)
+  - Decreases at index 6 (21 -> 19)
+
+Safe Report #61: 80 81 80 81 80 78 76 75
+Changes:
+  - Increases at index 1 (80 -> 81)
+  - Decreases at index 2 (81 -> 80)
+  - Increases at index 3 (80 -> 81)
+  - Decreases at index 4 (81 -> 80)
+  - Decreases at index 5 (80 -> 78)
+  - Decreases at index 6 (78 -> 76)
+  - Decreases at index 7 (76 -> 75)
+
+Safe Report #62: 85 87 85 83 85 86
+Changes:
+  - Increases at index 1 (85 -> 87)
+  - Decreases at index 2 (87 -> 85)
+  - Decreases at index 3 (85 -> 83)
+  - Increases at index 4 (83 -> 85)
+  - Increases at index 5 (85 -> 86)
+
+Safe Report #63: 70 72 70 68 69 68 68
+Changes:
+  - Increases at index 1 (70 -> 72)
+  - Decreases at index 2 (72 -> 70)
+  - Decreases at index 3 (70 -> 68)
+  - Increases at index 4 (68 -> 69)
+  - Decreases at index 5 (69 -> 68)
+
+Safe Report #64: 40 42 39 36 34 34 33 32
+Changes:
+  - Increases at index 1 (40 -> 42)
+  - Decreases at index 2 (42 -> 39)
+  - Decreases at index 3 (39 -> 36)
+  - Decreases at index 4 (36 -> 34)
+  - Decreases at index 6 (34 -> 33)
+  - Decreases at index 7 (33 -> 32)
+
+Safe Report #65: 73 75 75 74 71 70 71
+Changes:
+  - Increases at index 1 (73 -> 75)
+  - Decreases at index 3 (75 -> 74)
+  - Decreases at index 4 (74 -> 71)
+  - Decreases at index 5 (71 -> 70)
+  - Increases at index 6 (70 -> 71)
+
+Safe Report #66: 91 92 88 86 85 82 81
+Changes:
+  - Increases at index 1 (91 -> 92)
+  - Decreases at index 2 (92 -> 88)
+  - Decreases at index 3 (88 -> 86)
+  - Decreases at index 4 (86 -> 85)
+  - Decreases at index 5 (85 -> 82)
+  - Decreases at index 6 (82 -> 81)
+
+Safe Report #67: 59 62 58 56 57
+Changes:
+  - Increases at index 1 (59 -> 62)
+  - Decreases at index 2 (62 -> 58)
+  - Decreases at index 3 (58 -> 56)
+  - Increases at index 4 (56 -> 57)
+
+Safe Report #68: 45 46 45 48 46 44 42 42
+Changes:
+  - Increases at index 1 (45 -> 46)
+  - Decreases at index 2 (46 -> 45)
+  - Increases at index 3 (45 -> 48)
+  - Decreases at index 4 (48 -> 46)
+  - Decreases at index 5 (46 -> 44)
+  - Decreases at index 6 (44 -> 42)
+
+Safe Report #69: 44 45 42 39 36 35 35
+Changes:
+  - Increases at index 1 (44 -> 45)
+  - Decreases at index 2 (45 -> 42)
+  - Decreases at index 3 (42 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 35)
+
+Safe Report #70: 34 31 29 26 23 24
+Changes:
+  - Decreases at index 1 (34 -> 31)
+  - Decreases at index 2 (31 -> 29)
+  - Decreases at index 3 (29 -> 26)
+  - Decreases at index 4 (26 -> 23)
+  - Increases at index 5 (23 -> 24)
+
+Safe Report #71: 19 22 20 19 18
+Changes:
+  - Increases at index 1 (19 -> 22)
+  - Decreases at index 2 (22 -> 20)
+  - Decreases at index 3 (20 -> 19)
+  - Decreases at index 4 (19 -> 18)
+
+Safe Report #72: 74 77 79 82 81 82
+Changes:
+  - Increases at index 1 (74 -> 77)
+  - Increases at index 2 (77 -> 79)
+  - Increases at index 3 (79 -> 82)
+  - Decreases at index 4 (82 -> 81)
+  - Increases at index 5 (81 -> 82)
+
+Safe Report #73: 72 73 70 67 65 64 67
+Changes:
+  - Increases at index 1 (72 -> 73)
+  - Decreases at index 2 (73 -> 70)
+  - Decreases at index 3 (70 -> 67)
+  - Decreases at index 4 (67 -> 65)
+  - Decreases at index 5 (65 -> 64)
+  - Increases at index 6 (64 -> 67)
+
+Safe Report #516: 6 8 11 12 14 16 18 16
+Changes:
+  - Increases at index 1 (6 -> 8)
+  - Increases at index 2 (8 -> 11)
+  - Increases at index 3 (11 -> 12)
+  - Increases at index 4 (12 -> 14)
+  - Increases at index 5 (14 -> 16)
+  - Increases at index 6 (16 -> 18)
+  - Decreases at index 7 (18 -> 16)
+
+Safe Report #518: 59 61 64 62 65
+Changes:
+  - Increases at index 1 (59 -> 61)
+  - Increases at index 2 (61 -> 64)
+  - Decreases at index 3 (64 -> 62)
+  - Increases at index 4 (62 -> 65)
+
+Safe Report #519: 33 36 37 39 36 35
+Changes:
+  - Increases at index 1 (33 -> 36)
+  - Increases at index 2 (36 -> 37)
+  - Increases at index 3 (37 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 35)
+
+Safe Report #520: 60 62 64 61 62 64 64
+Changes:
+  - Increases at index 1 (60 -> 62)
+  - Increases at index 2 (62 -> 64)
+  - Decreases at index 3 (64 -> 61)
+  - Increases at index 4 (61 -> 62)
+  - Increases at index 5 (62 -> 64)
+
+Safe Report #521: 72 73 75 77 79 82 79 85
+Changes:
+  - Increases at index 1 (72 -> 73)
+  - Increases at index 2 (73 -> 75)
+  - Increases at index 3 (75 -> 77)
+  - Increases at index 4 (77 -> 79)
+  - Increases at index 5 (79 -> 82)
+  - Decreases at index 6 (82 -> 79)
+  - Increases at index 7 (79 -> 85)
+
+Safe Report #523: 44 45 45 46 48 50 52 51
+Changes:
+  - Increases at index 1 (44 -> 45)
+  - Increases at index 3 (45 -> 46)
+  - Increases at index 4 (46 -> 48)
+  - Increases at index 5 (48 -> 50)
+  - Increases at index 6 (50 -> 52)
+  - Decreases at index 7 (52 -> 51)
+
+Safe Report #524: 12 10 11 14 17 18 20 21
+Changes:
+  - Decreases at index 1 (12 -> 10)
+  - Increases at index 2 (10 -> 11)
+  - Increases at index 3 (11 -> 14)
+  - Increases at index 4 (14 -> 17)
+  - Increases at index 5 (17 -> 18)
+  - Increases at index 6 (18 -> 20)
+  - Increases at index 7 (20 -> 21)
+
+Safe Report #525: 68 67 70 73 71
+Changes:
+  - Decreases at index 1 (68 -> 67)
+  - Increases at index 2 (67 -> 70)
+  - Increases at index 3 (70 -> 73)
+  - Decreases at index 4 (73 -> 71)
+
+Safe Report #526: 80 79 80 81 84 86 88 88
+Changes:
+  - Decreases at index 1 (80 -> 79)
+  - Increases at index 2 (79 -> 80)
+  - Increases at index 3 (80 -> 81)
+  - Increases at index 4 (81 -> 84)
+  - Increases at index 5 (84 -> 86)
+  - Increases at index 6 (86 -> 88)
+
+Safe Report #527: 24 21 24 26 25 26
+Changes:
+  - Decreases at index 1 (24 -> 21)
+  - Increases at index 2 (21 -> 24)
+  - Increases at index 3 (24 -> 26)
+  - Decreases at index 4 (26 -> 25)
+  - Increases at index 5 (25 -> 26)
+
+Safe Report #528: 30 29 32 35 37 34 33
+Changes:
+  - Decreases at index 1 (30 -> 29)
+  - Increases at index 2 (29 -> 32)
+  - Increases at index 3 (32 -> 35)
+  - Increases at index 4 (35 -> 37)
+  - Decreases at index 5 (37 -> 34)
+  - Decreases at index 6 (34 -> 33)
+
+Safe Report #529: 45 42 41 44 44
+Changes:
+  - Decreases at index 1 (45 -> 42)
+  - Decreases at index 2 (42 -> 41)
+  - Increases at index 3 (41 -> 44)
+
+Safe Report #530: 44 42 43 44 45 45 48 51
+Changes:
+  - Decreases at index 1 (44 -> 42)
+  - Increases at index 2 (42 -> 43)
+  - Increases at index 3 (43 -> 44)
+  - Increases at index 4 (44 -> 45)
+  - Increases at index 6 (45 -> 48)
+  - Increases at index 7 (48 -> 51)
+
+Safe Report #531: 53 52 52 55 53
+Changes:
+  - Decreases at index 1 (53 -> 52)
+  - Increases at index 3 (52 -> 55)
+  - Decreases at index 4 (55 -> 53)
+
+Safe Report #532: 77 75 79 81 78
+Changes:
+  - Decreases at index 1 (77 -> 75)
+  - Increases at index 2 (75 -> 79)
+  - Increases at index 3 (79 -> 81)
+  - Decreases at index 4 (81 -> 78)
+
+Safe Report #533: 81 78 76 74 73 71 73
+Changes:
+  - Decreases at index 1 (81 -> 78)
+  - Decreases at index 2 (78 -> 76)
+  - Decreases at index 3 (76 -> 74)
+  - Decreases at index 4 (74 -> 73)
+  - Decreases at index 5 (73 -> 71)
+  - Increases at index 6 (71 -> 73)
+
+Safe Report #535: 99 96 98 97 96 94
+Changes:
+  - Decreases at index 1 (99 -> 96)
+  - Increases at index 2 (96 -> 98)
+  - Decreases at index 3 (98 -> 97)
+  - Decreases at index 4 (97 -> 96)
+  - Decreases at index 5 (96 -> 94)
+
+Safe Report #536: 39 37 35 33 32 31 34 36
+Changes:
+  - Decreases at index 1 (39 -> 37)
+  - Decreases at index 2 (37 -> 35)
+  - Decreases at index 3 (35 -> 33)
+  - Decreases at index 4 (33 -> 32)
+  - Decreases at index 5 (32 -> 31)
+  - Increases at index 6 (31 -> 34)
+  - Increases at index 7 (34 -> 36)
+
+Safe Report #537: 27 25 22 24 24
+Changes:
+  - Decreases at index 1 (27 -> 25)
+  - Decreases at index 2 (25 -> 22)
+  - Increases at index 3 (22 -> 24)
+
+Safe Report #538: 95 93 90 93 87
+Changes:
+  - Decreases at index 1 (95 -> 93)
+  - Decreases at index 2 (93 -> 90)
+  - Increases at index 3 (90 -> 93)
+  - Decreases at index 4 (93 -> 87)
+
+Safe Report #540: 64 62 61 60 60 58 55 57
+Changes:
+  - Decreases at index 1 (64 -> 62)
+  - Decreases at index 2 (62 -> 61)
+  - Decreases at index 3 (61 -> 60)
+  - Decreases at index 5 (60 -> 58)
+  - Decreases at index 6 (58 -> 55)
+  - Increases at index 7 (55 -> 57)
+
+Safe Report #541: 24 25 24 22 21 18 15 13
+Changes:
+  - Increases at index 1 (24 -> 25)
+  - Decreases at index 2 (25 -> 24)
+  - Decreases at index 3 (24 -> 22)
+  - Decreases at index 4 (22 -> 21)
+  - Decreases at index 5 (21 -> 18)
+  - Decreases at index 6 (18 -> 15)
+  - Decreases at index 7 (15 -> 13)
+
+Safe Report #542: 43 45 42 39 36 33 34
+Changes:
+  - Increases at index 1 (43 -> 45)
+  - Decreases at index 2 (45 -> 42)
+  - Decreases at index 3 (42 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 33)
+  - Increases at index 6 (33 -> 34)
+
+Safe Report #543: 71 73 72 69 67 64 63 63
+Changes:
+  - Increases at index 1 (71 -> 73)
+  - Decreases at index 2 (73 -> 72)
+  - Decreases at index 3 (72 -> 69)
+  - Decreases at index 4 (69 -> 67)
+  - Decreases at index 5 (67 -> 64)
+  - Decreases at index 6 (64 -> 63)
+
+Safe Report #544: 38 39 38 36 37 36 34 33
+Changes:
+  - Increases at index 1 (38 -> 39)
+  - Decreases at index 2 (39 -> 38)
+  - Decreases at index 3 (38 -> 36)
+  - Increases at index 4 (36 -> 37)
+  - Decreases at index 5 (37 -> 36)
+  - Decreases at index 6 (36 -> 34)
+  - Decreases at index 7 (34 -> 33)
+
+Safe Report #545: 53 54 56 55 58
+Changes:
+  - Increases at index 1 (53 -> 54)
+  - Increases at index 2 (54 -> 56)
+  - Decreases at index 3 (56 -> 55)
+  - Increases at index 4 (55 -> 58)
+
+Safe Report #546: 76 78 75 78 76 73 73
+Changes:
+  - Increases at index 1 (76 -> 78)
+  - Decreases at index 2 (78 -> 75)
+  - Increases at index 3 (75 -> 78)
+  - Decreases at index 4 (78 -> 76)
+  - Decreases at index 5 (76 -> 73)
+
+Safe Report #547: 97 98 96 95 93 90 90 87
+Changes:
+  - Increases at index 1 (97 -> 98)
+  - Decreases at index 2 (98 -> 96)
+  - Decreases at index 3 (96 -> 95)
+  - Decreases at index 4 (95 -> 93)
+  - Decreases at index 5 (93 -> 90)
+  - Decreases at index 7 (90 -> 87)
+
+Safe Report #548: 42 44 41 40 39 39 37 40
+Changes:
+  - Increases at index 1 (42 -> 44)
+  - Decreases at index 2 (44 -> 41)
+  - Decreases at index 3 (41 -> 40)
+  - Decreases at index 4 (40 -> 39)
+  - Decreases at index 6 (39 -> 37)
+  - Increases at index 7 (37 -> 40)
+
+Safe Report #549: 3 6 8 10 13 16 19 16
+Changes:
+  - Increases at index 1 (3 -> 6)
+  - Increases at index 2 (6 -> 8)
+  - Increases at index 3 (8 -> 10)
+  - Increases at index 4 (10 -> 13)
+  - Increases at index 5 (13 -> 16)
+  - Increases at index 6 (16 -> 19)
+  - Decreases at index 7 (19 -> 16)
+
+Safe Report #551: 28 29 30 29 30 33
+Changes:
+  - Increases at index 1 (28 -> 29)
+  - Increases at index 2 (29 -> 30)
+  - Decreases at index 3 (30 -> 29)
+  - Increases at index 4 (29 -> 30)
+  - Increases at index 5 (30 -> 33)
+
+Safe Report #552: 43 44 47 50 49 47
+Changes:
+  - Increases at index 1 (43 -> 44)
+  - Increases at index 2 (44 -> 47)
+  - Increases at index 3 (47 -> 50)
+  - Decreases at index 4 (50 -> 49)
+  - Decreases at index 5 (49 -> 47)
+
+Safe Report #553: 77 80 82 83 86 83 85 85
+Changes:
+  - Increases at index 1 (77 -> 80)
+  - Increases at index 2 (80 -> 82)
+  - Increases at index 3 (82 -> 83)
+  - Increases at index 4 (83 -> 86)
+  - Decreases at index 5 (86 -> 83)
+  - Increases at index 6 (83 -> 85)
+
+Safe Report #554: 32 33 35 33 38
+Changes:
+  - Increases at index 1 (32 -> 33)
+  - Increases at index 2 (33 -> 35)
+  - Decreases at index 3 (35 -> 33)
+  - Increases at index 4 (33 -> 38)
+
+Safe Report #556: 77 80 80 83 82
+Changes:
+  - Increases at index 1 (77 -> 80)
+  - Increases at index 3 (80 -> 83)
+  - Decreases at index 4 (83 -> 82)
+
+Safe Report #557: 50 48 49 50 53 56
+Changes:
+  - Decreases at index 1 (50 -> 48)
+  - Increases at index 2 (48 -> 49)
+  - Increases at index 3 (49 -> 50)
+  - Increases at index 4 (50 -> 53)
+  - Increases at index 5 (53 -> 56)
+
+Safe Report #558: 97 94 97 98 95
+Changes:
+  - Decreases at index 1 (97 -> 94)
+  - Increases at index 2 (94 -> 97)
+  - Increases at index 3 (97 -> 98)
+  - Decreases at index 4 (98 -> 95)
+
+Safe Report #559: 5 2 3 6 9 9
+Changes:
+  - Decreases at index 1 (5 -> 2)
+  - Increases at index 2 (2 -> 3)
+  - Increases at index 3 (3 -> 6)
+  - Increases at index 4 (6 -> 9)
+
+Safe Report #560: 83 80 81 84 87 86 88
+Changes:
+  - Decreases at index 1 (83 -> 80)
+  - Increases at index 2 (80 -> 81)
+  - Increases at index 3 (81 -> 84)
+  - Increases at index 4 (84 -> 87)
+  - Decreases at index 5 (87 -> 86)
+  - Increases at index 6 (86 -> 88)
+
+Safe Report #561: 24 21 22 25 24 25 22
+Changes:
+  - Decreases at index 1 (24 -> 21)
+  - Increases at index 2 (21 -> 22)
+  - Increases at index 3 (22 -> 25)
+  - Decreases at index 4 (25 -> 24)
+  - Increases at index 5 (24 -> 25)
+  - Decreases at index 6 (25 -> 22)
+
+Safe Report #562: 99 97 96 97 97
+Changes:
+  - Decreases at index 1 (99 -> 97)
+  - Decreases at index 2 (97 -> 96)
+  - Increases at index 3 (96 -> 97)
+
+Safe Report #563: 9 8 11 12 15 17 17 19
+Changes:
+  - Decreases at index 1 (9 -> 8)
+  - Increases at index 2 (8 -> 11)
+  - Increases at index 3 (11 -> 12)
+  - Increases at index 4 (12 -> 15)
+  - Increases at index 5 (15 -> 17)
+  - Increases at index 7 (17 -> 19)
+
+Safe Report #564: 31 28 30 32 32 29
+Changes:
+  - Decreases at index 1 (31 -> 28)
+  - Increases at index 2 (28 -> 30)
+  - Increases at index 3 (30 -> 32)
+  - Decreases at index 5 (32 -> 29)
+
+Safe Report #565: 94 92 96 98 99 97
+Changes:
+  - Decreases at index 1 (94 -> 92)
+  - Increases at index 2 (92 -> 96)
+  - Increases at index 3 (96 -> 98)
+  - Increases at index 4 (98 -> 99)
+  - Decreases at index 5 (99 -> 97)
+
+Safe Report #566: 31 28 25 23 20 18 20
+Changes:
+  - Decreases at index 1 (31 -> 28)
+  - Decreases at index 2 (28 -> 25)
+  - Decreases at index 3 (25 -> 23)
+  - Decreases at index 4 (23 -> 20)
+  - Decreases at index 5 (20 -> 18)
+  - Increases at index 6 (18 -> 20)
+
+Safe Report #568: 98 96 94 97 94 93
+Changes:
+  - Decreases at index 1 (98 -> 96)
+  - Decreases at index 2 (96 -> 94)
+  - Increases at index 3 (94 -> 97)
+  - Decreases at index 4 (97 -> 94)
+  - Decreases at index 5 (94 -> 93)
+
+Safe Report #569: 82 80 79 82 80 79 82
+Changes:
+  - Decreases at index 1 (82 -> 80)
+  - Decreases at index 2 (80 -> 79)
+  - Increases at index 3 (79 -> 82)
+  - Decreases at index 4 (82 -> 80)
+  - Decreases at index 5 (80 -> 79)
+  - Increases at index 6 (79 -> 82)
+
+Safe Report #570: 80 78 81 80 80
+Changes:
+  - Decreases at index 1 (80 -> 78)
+  - Increases at index 2 (78 -> 81)
+  - Decreases at index 3 (81 -> 80)
+
+Safe Report #572: 72 71 68 67 66 66 68
+Changes:
+  - Decreases at index 1 (72 -> 71)
+  - Decreases at index 2 (71 -> 68)
+  - Decreases at index 3 (68 -> 67)
+  - Decreases at index 4 (67 -> 66)
+  - Increases at index 6 (66 -> 68)
+
+Safe Report #573: 56 58 57 55 54 52
+Changes:
+  - Increases at index 1 (56 -> 58)
+  - Decreases at index 2 (58 -> 57)
+  - Decreases at index 3 (57 -> 55)
+  - Decreases at index 4 (55 -> 54)
+  - Decreases at index 5 (54 -> 52)
+
+Safe Report #574: 5 8 7 6 5 7
+Changes:
+  - Increases at index 1 (5 -> 8)
+  - Decreases at index 2 (8 -> 7)
+  - Decreases at index 3 (7 -> 6)
+  - Decreases at index 4 (6 -> 5)
+  - Increases at index 5 (5 -> 7)
+
+Safe Report #575: 26 28 27 25 23 21 19 19
+Changes:
+  - Increases at index 1 (26 -> 28)
+  - Decreases at index 2 (28 -> 27)
+  - Decreases at index 3 (27 -> 25)
+  - Decreases at index 4 (25 -> 23)
+  - Decreases at index 5 (23 -> 21)
+  - Decreases at index 6 (21 -> 19)
+
+Safe Report #576: 80 81 80 81 80 78 76 75
+Changes:
+  - Increases at index 1 (80 -> 81)
+  - Decreases at index 2 (81 -> 80)
+  - Increases at index 3 (80 -> 81)
+  - Decreases at index 4 (81 -> 80)
+  - Decreases at index 5 (80 -> 78)
+  - Decreases at index 6 (78 -> 76)
+  - Decreases at index 7 (76 -> 75)
+
+Safe Report #577: 85 87 85 83 85 86
+Changes:
+  - Increases at index 1 (85 -> 87)
+  - Decreases at index 2 (87 -> 85)
+  - Decreases at index 3 (85 -> 83)
+  - Increases at index 4 (83 -> 85)
+  - Increases at index 5 (85 -> 86)
+
+Safe Report #578: 70 72 70 68 69 68 68
+Changes:
+  - Increases at index 1 (70 -> 72)
+  - Decreases at index 2 (72 -> 70)
+  - Decreases at index 3 (70 -> 68)
+  - Increases at index 4 (68 -> 69)
+  - Decreases at index 5 (69 -> 68)
+
+Safe Report #579: 40 42 39 36 34 34 33 32
+Changes:
+  - Increases at index 1 (40 -> 42)
+  - Decreases at index 2 (42 -> 39)
+  - Decreases at index 3 (39 -> 36)
+  - Decreases at index 4 (36 -> 34)
+  - Decreases at index 6 (34 -> 33)
+  - Decreases at index 7 (33 -> 32)
+
+Safe Report #580: 73 75 75 74 71 70 71
+Changes:
+  - Increases at index 1 (73 -> 75)
+  - Decreases at index 3 (75 -> 74)
+  - Decreases at index 4 (74 -> 71)
+  - Decreases at index 5 (71 -> 70)
+  - Increases at index 6 (70 -> 71)
+
+Safe Report #581: 91 92 88 86 85 82 81
+Changes:
+  - Increases at index 1 (91 -> 92)
+  - Decreases at index 2 (92 -> 88)
+  - Decreases at index 3 (88 -> 86)
+  - Decreases at index 4 (86 -> 85)
+  - Decreases at index 5 (85 -> 82)
+  - Decreases at index 6 (82 -> 81)
+
+Safe Report #582: 59 62 58 56 57
+Changes:
+  - Increases at index 1 (59 -> 62)
+  - Decreases at index 2 (62 -> 58)
+  - Decreases at index 3 (58 -> 56)
+  - Increases at index 4 (56 -> 57)
+
+Safe Report #583: 45 46 45 48 46 44 42 42
+Changes:
+  - Increases at index 1 (45 -> 46)
+  - Decreases at index 2 (46 -> 45)
+  - Increases at index 3 (45 -> 48)
+  - Decreases at index 4 (48 -> 46)
+  - Decreases at index 5 (46 -> 44)
+  - Decreases at index 6 (44 -> 42)
+
+Safe Report #584: 44 45 42 39 36 35 35
+Changes:
+  - Increases at index 1 (44 -> 45)
+  - Decreases at index 2 (45 -> 42)
+  - Decreases at index 3 (42 -> 39)
+  - Decreases at index 4 (39 -> 36)
+  - Decreases at index 5 (36 -> 35)
+
+Safe Report #585: 34 31 29 26 23 24
+Changes:
+  - Decreases at index 1 (34 -> 31)
+  - Decreases at index 2 (31 -> 29)
+  - Decreases at index 3 (29 -> 26)
+  - Decreases at index 4 (26 -> 23)
+  - Increases at index 5 (23 -> 24)
+
+Safe Report #586: 19 22 20 19 18
+Changes:
+  - Increases at index 1 (19 -> 22)
+  - Decreases at index 2 (22 -> 20)
+  - Decreases at index 3 (20 -> 19)
+  - Decreases at index 4 (19 -> 18)
+
+Safe Report #587: 74 77 79 82 81 82
+Changes:
+  - Increases at index 1 (74 -> 77)
+  - Increases at index 2 (77 -> 79)
+  - Increases at index 3 (79 -> 82)
+  - Decreases at index 4 (82 -> 81)
+  - Increases at index 5 (81 -> 82)
+
+Safe Report #588: 72 73 70 67 65 64 67
+Changes:
+  - Increases at index 1 (72 -> 73)
+  - Decreases at index 2 (73 -> 70)
+  - Decreases at index 3 (70 -> 67)
+  - Decreases at index 4 (67 -> 65)
+  - Decreases at index 5 (65 -> 64)
+  - Increases at index 6 (64 -> 67)
+
+
+Pattern Statistics:
+------------------
+Single peaks (up then down): 0
+Single valleys (down then up): 0
+Multiple direction changes: 130
+
+Summary:
+--------
+12.6% of safe reports are non-monotonic
+100.0% of non-monotonic reports have multiple direction changes
