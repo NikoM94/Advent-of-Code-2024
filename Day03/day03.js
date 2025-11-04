@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-const input = readFileSync('C:/Users/nm/Programming/AoC2024/Day03/day03input.txt', 'utf-8');
+const input = readFileSync('day03input.txt', 'utf-8');
 console.log('P1: ' + p1(input));
 console.log('P2: ' + p2(input));
 
