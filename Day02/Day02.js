@@ -1,58 +1,46 @@
 const fs = require('fs');
 
-const input = fs.readFileSync('./Day02/Day02input.txt', 'utf-8');
-console.log('P2: ' + solve(parseData(input)));
+const input = parseData(fs.readFileSync('C:/Users/nm/Programming/AoC2024/Day02/day02input.txt', 'utf-8'));
+console.log('P1: ' + input.filter(isSafe).length);
+console.log('P2: ' + input.filter(isSafeDampened).length);
+
 function parseData(input) {
-    const lines = input.split(/\r?\n/).filter(line => line.trim().length > 0);
-    return lines.map(line => line.trim().split(/\s+/).map(Number));
+    const lines = input.split(/\r?\n/)
+        .filter(line => line.trim().length > 0);
+    return lines.map(line => line.trim()
+        .split(/\s+/)
+        .map(Number));
 }
 
-function solve(data) {
-    let safeReports = 0;
-    for (let i = 0; i < data.length; i++) {
-        let safe = true;
-        let dampener = 0;
-        for (let j = 1; j < data[i].length; j++) {
-            if (dampener == 2) {
-                safe = false;
-                break;
+function isSafe(report) {
+    let hasPositive = false, hasNegative = false;
+    for (let i = 1; i < report.length; i++) {
+        let diff = report[i] - report[i - 1];
+        if (diff < 0) {
+            hasNegative = true;
+            if (hasPositive || diff < -3) {
+                return false;
             }
-            if (!withinRange(data[i][j], data[i][j-1])) {
-                if (!withinRange(data[i][j], data[i][j-2])) {
-                    safe = false;
-                    break;
-                } else {
-                    dampener++;
-                }
+        } else if (diff > 0) {
+            hasPositive = true;
+            if (hasNegative || diff > 3) {
+                return false;
             }
-        }
-        if (safe && dampener < 2) {
-            safeReports++;
-            console.log('Safe report from line ' + safeReports + ': ' + data[i]);
-        }
-    }
-    return safeReports;
-}
-
-function isIncreasing(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] < arr[i - 1]) {
+        } else {
             return false;
         }
     }
     return true;
 }
 
-function isDecreasing(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > arr[i - 1]) {
-            return false;
+function isSafeDampened(report) {
+    if (isSafe(report)) {
+        return true;
+    }
+    for (let i = 0; i < report.length; i++) {
+        if (isSafe(report.toSpliced(i, 1))) {
+            return true;
         }
     }
-    return true;
-}
-
-function withinRange(a, b) {
-    const diff = Math.abs(a - b);
-    return diff >= 1 && diff <= 3;
+    return false;
 }
