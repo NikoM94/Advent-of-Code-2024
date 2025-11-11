@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-
+//git push test
 function parseData(file) {
     const text = String(fs.readFileSync(file));
     // split into non-empty lines and handle CRLF
