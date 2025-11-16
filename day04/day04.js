@@ -1,36 +1,76 @@
-import { readFileSync } from 'fs';
+import { readFileSync } from "fs";
 
-const raw = readFileSync('./day04test.txt', 'utf-8');
+const raw = readFileSync("./day04input.txt", "utf-8");
 const input = parseInput(raw);
-console.log('P1: ' + p1(input, true));
-//console.log('P2: ' + p2(input));
+console.log("P1: " + p1(input, false));
+console.log("P2: " + p2(input));
 
-function parseInput(input, test) {
+function parseInput(input) {
   let searchString = "";
-  input.split('\r\n').forEach(line => {
+  input.split("\r\n").forEach((line) => {
     searchString += line;
   });
+  return searchString;
 }
-
-function p1(input, test) {
+function p2(input, test) {
   let xmasCount = 0;
   let correctWord = "XMAS";
-  let offsets = test ? [-11, -10, -9, -1, 1, 9, 10, 11] : [-141, -140, -139, -1, 1, 139, 140, 141];
+  let offsets = test
+    ? [-12, -11, -10, -1, 1, 10, 11, 12]
+    : [-142, -141, -140, -1, 1, 140, 141, 142];
   for (let i = 0; i < input.length; i++) {
     let checkString = "";
-    if (checkString != "" && input[i] != "X") {
+    if (input[i] != "X") {
       continue;
     } else {
       checkString += input[i];
     }
     for (let j = 0; j < offsets.length; j++) {
-      for (let k = 0; k < correctWord.length; k++) {
-        if ((i + offsets[j]) < 0 || (i + offsets[j]) >= input.length) {
+      let increment = offsets[j];
+      for (let k = 0; k < correctWord.length - 1; k++) {
+        if (i + increment < 0 || i + increment > input.length) {
           break;
         } else {
-          checkString += input[i + offsets[j]];
+          checkString += input[i + increment];
         }
+        increment += offsets[j];
       }
+      if (checkString === correctWord) {
+        xmasCount++;
+      }
+      checkString = "X";
+    }
+  }
+  return xmasCount;
+}
+
+function p1(input, test) {
+  let xmasCount = 0;
+  let correctWord = "XMAS";
+  let offsets = test
+    ? [-12, -11, -10, -1, 1, 10, 11, 12]
+    : [-142, -141, -140, -1, 1, 140, 141, 142];
+  for (let i = 0; i < input.length; i++) {
+    let checkString = "";
+    if (input[i] != "X") {
+      continue;
+    } else {
+      checkString += input[i];
+    }
+    for (let j = 0; j < offsets.length; j++) {
+      let increment = offsets[j];
+      for (let k = 0; k < correctWord.length - 1; k++) {
+        if (i + increment < 0 || i + increment > input.length) {
+          break;
+        } else {
+          checkString += input[i + increment];
+        }
+        increment += offsets[j];
+      }
+      if (checkString === correctWord) {
+        xmasCount++;
+      }
+      checkString = "X";
     }
   }
   return xmasCount;
