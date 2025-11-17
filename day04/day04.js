@@ -2,76 +2,47 @@ import { readFileSync } from "fs";
 
 const raw = readFileSync("./day04input.txt", "utf-8");
 const input = parseInput(raw);
-console.log("P1: " + p1(input, false));
 console.log("P2: " + p2(input));
 
 function parseInput(input) {
   let searchString = "";
-  input.split("\r\n").forEach((line) => {
-    searchString += line;
+  input.split("\n").forEach((line) => {
+    searchString += line.trim();
   });
   return searchString;
 }
-function p2(input, test) {
+
+function p2(input) {
+  const N = Math.sqrt(input.length);
   let xmasCount = 0;
-  let correctWord = "XMAS";
-  let offsets = test
-    ? [-12, -11, -10, -1, 1, 10, 11, 12]
-    : [-142, -141, -140, -1, 1, 140, 141, 142];
-  for (let i = 0; i < input.length; i++) {
-    let checkString = "";
-    if (input[i] != "X") {
+  //only 4 possible correct combinations
+  const correctWords = ["MMSS", "SSMM", "MSMS", "SMSM"];
+  //check in order top-left, top-right, bottom-left, bottom-right
+  const offsets = [-N - 1, -N + 1, N - 1, N + 1];
+  const lastLineExclusion = input.length - N - 1;
+  for (let i = N; i < input.length; i++) {
+    if (input[i] !== "A") {
       continue;
-    } else {
-      checkString += input[i];
     }
+    let checkString = "";
     for (let j = 0; j < offsets.length; j++) {
-      let increment = offsets[j];
-      for (let k = 0; k < correctWord.length - 1; k++) {
-        if (i + increment < 0 || i + increment > input.length) {
-          break;
-        } else {
-          checkString += input[i + increment];
-        }
-        increment += offsets[j];
+      if (onRightEdge(N, i) || onLeftEdge(N, i) || i > lastLineExclusion) {
+        continue;
+      } else {
+        checkString += input[i + offsets[j]];
       }
-      if (checkString === correctWord) {
-        xmasCount++;
-      }
-      checkString = "X";
+    }
+    if (correctWords.includes(checkString)) {
+      xmasCount++;
     }
   }
   return xmasCount;
 }
 
-function p1(input, test) {
-  let xmasCount = 0;
-  let correctWord = "XMAS";
-  let offsets = test
-    ? [-12, -11, -10, -1, 1, 10, 11, 12]
-    : [-142, -141, -140, -1, 1, 140, 141, 142];
-  for (let i = 0; i < input.length; i++) {
-    let checkString = "";
-    if (input[i] != "X") {
-      continue;
-    } else {
-      checkString += input[i];
-    }
-    for (let j = 0; j < offsets.length; j++) {
-      let increment = offsets[j];
-      for (let k = 0; k < correctWord.length - 1; k++) {
-        if (i + increment < 0 || i + increment > input.length) {
-          break;
-        } else {
-          checkString += input[i + increment];
-        }
-        increment += offsets[j];
-      }
-      if (checkString === correctWord) {
-        xmasCount++;
-      }
-      checkString = "X";
-    }
-  }
-  return xmasCount;
+function onRightEdge(length, index) {
+  return (index + 1) % length === 0;
+}
+
+function onLeftEdge(length, index) {
+  return index % length === 0;
 }
